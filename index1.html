@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love, Yukta ❤️</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a romantic gradient background and font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7); /* Soft pink/red gradient */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ee9ca7;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e07a8b;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center">
+
+    <div class="max-w-4xl w-full bg-white bg-opacity-90 rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 space-y-10 text-center transform transition-all duration-500 hover:scale-[1.01] border-4 border-pink-300">
+
+        <!-- Personalized Welcome Message -->
+        <h1 class="text-5xl md:text-6xl font-extrabold text-pink-600 leading-tight tracking-tight animate-fade-in-down">
+            For My Love, <span class="text-purple-700">Yukta</span> ❤️
+        </h1>
+
+        <!-- Opening Message -->
+        <p class="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium animate-fade-in delay-200">
+            My dearest Yukta, every moment with you is a treasure. This page is just a small reflection of the immense love I hold for you in my heart.
+        </p>
+
+        <!-- Section for Expressing Love -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in delay-400">
+            <div class="bg-pink-50 p-6 rounded-2xl shadow-md border border-pink-200">
+                <h2 class="text-3xl font-bold text-pink-500 mb-4">Why I Love You</h2>
+                <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                    <li>Your beautiful smile that brightens my day.</li>
+                    <li>Your kindness and compassionate heart.</li>
+                    <li>Your incredible sense of humor that always makes me laugh.</li>
+                    <li>Your strength and resilience.</li>
+                    <li>Every little thing that makes you, YOU.</li>
+                </ul>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-2xl shadow-md border border-purple-200">
+                <h2 class="text-3xl font-bold text-purple-500 mb-4">Our Special Moments</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    From our first meeting to all the adventures we've shared, each memory is etched in my soul. I cherish our laughter, our quiet moments, and the way we always support each other. You make life an extraordinary journey.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section for Pictures -->
+        <div class="space-y-6 animate-fade-in delay-600">
+            <h2 class="text-4xl font-bold text-red-500 mb-6">My love</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Placeholder Image 1 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg border-4 border-pink-300 transform transition-all duration-300 hover:scale-105">
+                    <img src="yukta1.png" alt="Yukta's Picture 1" class="w-full h-auto object-cover rounded-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-xl font-semibold">I loved the most</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 2 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg border-4 border-purple-300 transform transition-all duration-300 hover:scale-105">
+                    <img src="yukta2.png" alt="Yukta's Picture 2" class="w-full h-auto object-cover rounded-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-xl font-semibold">I fell for</p>
+                    </div>
+                </div>
+                <!-- Placeholder Image 3 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg border-4 border-red-300 transform transition-all duration-300 hover:scale-105">
+                    <img src="yukta5.png" alt="Yukta's Picture 3" class="w-full h-auto object-cover rounded-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-xl font-semibold">Cutest one</p>
+                    </div>
+                </div>
+                <!-- Add more image divs here as needed -->
+            </div>
+            <p class="text-lg text-gray-600 italic">
+               
+            </p>
+        </div>
+
+        <!-- Closing Message -->
+        <p class="text-2xl md:text-3xl font-semibold text-pink-700 leading-tight animate-fade-in delay-800">
+            You are my everything, Yukta. I love you more than words can say.
+            <br>
+            <span class="text-lg text-gray-600 mt-2 block">With all my love, [Your pagal❤️]</span>
+        </p>
+
+    </div>
+
+    <script>
+        // Simple JavaScript to add a subtle animation class after load (optional, but nice touch)
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-fade-in, .animate-fade-in-down');
+            elements.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        });
+    </script>
+</body>
+</html>

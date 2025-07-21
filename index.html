@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for the heart shape */
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            background-color: #ef4444; /* Tailwind red-500 */
+            transform: rotate(-45deg);
+            border-radius: 10px; /* Rounded corners for the heart base */
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background-color: #ef4444; /* Tailwind red-500 */
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -45px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 45px;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 font-sans text-gray-800">
+
+    <div class="flex flex-col items-center justify-center p-8 bg-white bg-opacity-90 rounded-3xl shadow-2xl space-y-8 max-w-sm w-full transform transition-all duration-300 hover:scale-105">
+        <!-- Heart Container -->
+        <div class="flex items-center justify-center">
+            <div class="heart"></div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-3xl font-extrabold text-gray-900 text-center">
+            For my Love
+        </h1>
+
+        <!-- Description -->
+        <p class="text-base text-gray-600 text-center leading-relaxed">
+            Click the button below to discover something special!
+        </p>
+
+        <!-- Click Me Button -->
+        <button
+            id="clickMeButton"
+            class="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-75"
+            onclick="redirectToNewPage()"
+        >
+            Click Me!
+        </button>
+    </div>
+
+    <script>
+        /**
+         * Function to redirect the user to a new page.
+         * You can change 'https://www.google.com' to any URL you desire.
+         */
+        function redirectToNewPage() {
+            // Replace 'https://www.google.com' with the URL of your desired page.
+            window.location.href = 'index1.html';
+        }
+    </script>
+</body>
+</html>
